@@ -17,8 +17,7 @@ namespace _3.het
         public Form1()
         {
             InitializeComponent();
-            lbLastName.Text = Resource.LastName;
-            lbFirstName.Text = Resource.FirstName;
+            lbLastName.Text = Resource.FullName;
             btnadd.Text = Resource.Add;
 
             listUsers.DataSource = user;
@@ -31,8 +30,8 @@ namespace _3.het
         {
             var u = new User()
             {
-                LastName = txtLastName.Text,
-                FirstName = txtFirstName.Text,
+                FullName = txtLastName.Text,
+                
             };
             user.Add(u);
         }
