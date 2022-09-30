@@ -15,6 +15,10 @@ namespace _3.het
         public Form1()
         {
             InitializeComponent();
+            lbLastName.Text = Resource.LastName;
+            lbFirstName.Text = Resource.FirstName;
+            btnadd.Text = Resource.Add;
+
         }
     }
 }
