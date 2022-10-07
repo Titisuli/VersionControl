@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Reflection;
 
 namespace _4.het
 {
@@ -14,10 +16,13 @@ namespace _4.het
     {
         RealEstateEntities context = new RealEstateEntities();
         List<Flat> flats;
+        
+
         public Form1()
         {
             InitializeComponent();
             LoadData();
+
         }
 
         private void LoadData()
