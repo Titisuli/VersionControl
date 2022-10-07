@@ -34,6 +34,7 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lbLastName = new System.Windows.Forms.Label();
             this.lbFirstName = new System.Windows.Forms.Label();
+            this.btnfilesave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -87,11 +88,22 @@
             this.lbFirstName.TabIndex = 5;
             this.lbFirstName.Text = "label2";
             // 
+            // btnfilesave
+            // 
+            this.btnfilesave.Location = new System.Drawing.Point(371, 332);
+            this.btnfilesave.Name = "btnfilesave";
+            this.btnfilesave.Size = new System.Drawing.Size(134, 23);
+            this.btnfilesave.TabIndex = 6;
+            this.btnfilesave.Text = "button1";
+            this.btnfilesave.UseVisualStyleBackColor = true;
+            this.btnfilesave.Click += new System.EventHandler(this.btnfilesave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnfilesave);
             this.Controls.Add(this.lbFirstName);
             this.Controls.Add(this.lbLastName);
             this.Controls.Add(this.txtFirstName);
@@ -113,6 +125,7 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label lbLastName;
         private System.Windows.Forms.Label lbFirstName;
+        private System.Windows.Forms.Button btnfilesave;
     }
 }
 

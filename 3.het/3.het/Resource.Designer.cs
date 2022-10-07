@@ -77,5 +77,14 @@ namespace _3.het {
                 return ResourceManager.GetString("FullName", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fájlba mentés.
+        /// </summary>
+        internal static string save_in_file {
+            get {
+                return ResourceManager.GetString("save in file", resourceCulture);
+            }
+        }
     }
 }

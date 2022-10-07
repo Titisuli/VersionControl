@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,6 +35,19 @@ namespace _3.het
                 
             };
             user.Add(u);
+        }
+
+        private void btnfilesave_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sf = new SaveFileDialog();
+            if (sf.ShowDialog() != DialogResult.OK  )
+            {
+                return;
+            }
+            StreamWriter sv = new StreamWriter(sf.FileName);
+            sv.Write(txtLastName.Text);
+            sv.WriteLine(User.ID);
+
         }
     }
 }
