@@ -26,7 +26,7 @@ namespace _6.het.Entities
             g.FillEllipse(new SolidBrush(Color.Blue), 0, 0, Width, Height);
         }
 
-        private void MoveBall()
+        public void MoveBall()
         {
             Left += 1;
         }
