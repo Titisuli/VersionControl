@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _6.het.Entities
+namespace _6.het.Abstractions
 {
     public abstract class Toy : Label
     {
