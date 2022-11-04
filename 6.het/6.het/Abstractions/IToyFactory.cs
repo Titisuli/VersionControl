@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _6.het.Abstractions
 {
-    internal interface IToyFactory
+    public interface IToyFactory
     {
         Toy CreateNew();
     }
